@@ -75,5 +75,5 @@ function myFun2(x,y,z){
 myFun2(1); //1
 myFun2(1,2); //3
 myFun2(1,2,3); //1
-myFun2(); //false
+myFun2(); //false 
 ```
