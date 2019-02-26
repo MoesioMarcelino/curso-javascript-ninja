@@ -1,14 +1,15 @@
 /*
 Crie um array com 5 items (tipos variados).
 */
-var arr =  [true, 1, "oi", null, {nome: "Moesio"} ];
+arr = [1, 1.5, "oi", {nome: "Moesio"}, null];
 
 /*
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
 A função deverá retornar o array atualizado.
 */
-function addItem(x) {
-  arr.push(x);
+function addItem(param) {
+    arr.push(param);
+    console.log(arr);
 }
 
 /*
@@ -23,15 +24,13 @@ Mostre no console o segundo elemento desse último array, criado acima, com a
 frase:
 "O segundo elemento do segundo array é [ELEMENTO]."
 */
-
-console.log("O segundo elemento do segundo array é "+arr[1]+".");
+console.log("O segundo elemento do segundo array é " + arr[5][1]);
 
 /*
 Mostre no console quantos itens tem o primeiro array criado, com a frase:
 "O primeiro array tem [QUANTIDADE DE ITENS] itens."
 */
 console.log("O primeiro array tem "+ arr.length +" itens.");
-// ?
 
 /*
 Agora mostre no console quantos itens tem o segundo array criado, com a frase:
@@ -55,12 +54,11 @@ while(x<=20) {
 Na mesma ideia do exercício acima: mostre agora os números ímpares.
 */
 console.log( 'Números ímpares entre 10 e 20:' );
-var x = 10;
+x=10;
 while(x<=20) {
-  if(x%2!=0) console.log(x);
-  x++;
+    if(x%2!==0) console.log(x);
+    x++;
 }
-
 
 /*
 Repita os mesmos exercícios feitos acima, mas agora usando o loop "for".
@@ -70,8 +68,10 @@ Só vamos mudar o range:
 */
 console.log( 'Números pares entre 100 e 120:' );
 for(var i=100; i<=120; i++)
-  if(i%2==0) console.log(i);
-
+    if(i%2===0) console.log(i);
+    
 console.log( 'Números ímpares entre 111 e 125:' );
 for(var i=111; i<=125; i++)
-  if(i%2!=0) console.log(i);
+    if(i%2!==0) console.log(i);
+
+
