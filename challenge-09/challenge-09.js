@@ -1,4 +1,4 @@
-function{
+(function(){
     /*
     Crie uma IIFE que envolva todo o código desse arquivo. Faça também a
     indentação correta do código, para ficar dentro da IIFE.
@@ -82,13 +82,21 @@ function{
     uma função anônima que irá retornar a soma dos dois números que essa função
     anônima tem como seus argumentos.
     */
-    console.log( 'O resultado da soma é:' );
+    console.log( 'O resultado da soma é:');
+    console.log(sum(function(number1,number2){
+        return number1+number2;
+    }));
+    
 
     /*
     Agora declare outra variáveis chamadas `subtraction`, `multiplication`,
     `division` e `mod`, e atribua à elas `calculator`, passando números
     diferentes para cada chamada.
     */
+    var subtraction = calculator(5,3);
+    var multiplication = calculator(5,3);
+    var division = calculator(9,3);
+    var mod = calculator(6,3);
 
     /*
     Mostre as variáveis acima no `console` (uma chamada de console por variável),
@@ -98,43 +106,23 @@ function{
     chamada.
     */
     console.log( 'O resultado da subtração é:' );
-
+    console.log(subtraction(function(x,y){
+        return x+y;
+    }));
     
     console.log( 'O resultado da multiplicação é:' );
-
+    console.log(multiplication(function(x,y){
+        return x*y;
+    }));
     
     console.log( 'O resultado da divisão é:' );
-
+    console.log(division(function(x,y){
+        return x/y;
+    }));
     
     console.log( 'O resto da divisão é:' );
-
-
-    console.log( 'O resultado da soma é:' + sum());
-
-
-    /*
-    Agora declare outra variáveis chamadas `subtraction`, `multiplication`,
-    `division` e `mod`, e atribua à elas `calculator`, passando números
-    diferentes para cada chamada.
-    */
-    // ?
-
-    /*
-    Mostre as variáveis acima no `console` (uma chamada de console por variável),
-    criando a função de `callback` que faz o cálculo para subração, multiplicação,
-    divisão e módulo (resto de divisão), conforme a função utilizada.
-    As suas respostas devem estar abaixo dos `console.log` referentes à cada
-    chamada.
-    */
-    console.log( 'O resultado da subtração é:' );
-    // ?
-
-    console.log( 'O resultado da multiplicação é:' );
-    // ?
-
-    console.log( 'O resultado da divisão é:' );
-    // ?
-
-    console.log( 'O resto da divisão é:' );
-    // ?
-}
+    console.log(mod(function(x,y){
+        return x%y;
+    }));
+        
+})();
