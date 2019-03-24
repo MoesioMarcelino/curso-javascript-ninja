@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+
+        <br>
+            
+        <h1 class="text-center">Mini Calculadora</h1>
+
+        <div class="input-group">
+            <input type="text" class="form-control text-center" value="0" data-js="input" readonly>
+            
+        </div>
+
+        <br>
+        <div class="container text-center" id="buttons">
+            <button class="btn btn-primary col-lg-1" value="0" data-js="button-number">0</button>
+            <button class="btn btn-primary col-lg-1" value="1" data-js="button-number">1</button>
+            <button class="btn btn-primary col-lg-1" value="2" data-js="button-number">2</button>
+            <button class="btn btn-primary col-lg-1" value="3" data-js="button-number">3</button>
+            <button class="btn btn-primary col-lg-1" value="4" data-js="button-number">4</button>
+            <button class="btn btn-primary col-lg-1" value="5" data-js="button-number">5</button>
+            <button class="btn btn-primary col-lg-1" value="6" data-js="button-number">6</button>
+            <button class="btn btn-primary col-lg-1" value="7" data-js="button-number">7</button>
+            <button class="btn btn-primary col-lg-1" value="8" data-js="button-number">8</button>
+            <button class="btn btn-primary col-lg-1" value="9" data-js="button-number">9</button>
+        </div>
+        <br>
+        <div class="container text-center" id="operations">
+            <button class="btn btn-primary col-lg-1" data-js="button-operation" value="+">+</button>
+            <button class="btn btn-primary col-lg-1" data-js="button-operation" value="-">-</button>
+            <button class="btn btn-primary col-lg-1" data-js="button-operation" value="*">*</button>
+            <button class="btn btn-primary col-lg-1" data-js="button-operation" value="/">/</button>
+            <button class="btn btn-primary col-lg-1" data-js="button-ce" value="ce">CE</button>
+            <button class="btn btn-warning col-lg-5" data-js="button-equal" value="=">Calcular</button>
+        </div>
+    </div>  
+    <script src="challenge-23.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
