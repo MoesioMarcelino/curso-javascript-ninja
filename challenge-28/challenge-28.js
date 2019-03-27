@@ -114,6 +114,7 @@
     ajax.open('GET',url);
     ajax.send();
     getMessage('loading')
+    $status.get()[0].setAttribute('class','alert alert-warning text-center');
     ajax.addEventListener('readystatechange', handleReadyStateChange);
   }
 
@@ -124,9 +125,11 @@
   function handleReadyStateChange(){
     if(isRequestOK()){
       getMessage('ok');
+      $status.get()[0].setAttribute('class','alert alert-primary text-center');
       fillCEPFields();
     }else{
       getMessage('error');
+      $status.get()[0].setAttribute('class','alert alert-danger text-center');
       clearData();
     }
   }
@@ -152,11 +155,11 @@
   }
 
   function clearData(){
-    $logradouro.value = '-';
-    // bairro: '-',
-    // uf: '-',
-    // localidade: '-',
-    // cep: '-'
+    $logradouro.get()[0].textContent = '-';
+    $bairro.get()[0].textContent = '-';
+    $estado.get()[0].textContent = '-';
+    $cidade.get()[0].textContent = '-';
+    $cep.get()[0].textContent = '-';
 
   }
 
