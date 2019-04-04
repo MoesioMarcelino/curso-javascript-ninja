@@ -1,81 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Challenge-28</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Moesio Cars</title>
 </head>
-
 <body>
-  <div class="container">
-
-    <table class="table text-center">
-      <br>
-      <tr>
-        <h1></h1>
-      </tr>
-      <tr>  </tr>
-    </table>
-
-    <br>
-
-    <form>
-      <div class="row">
-        <div class="col-sm">
-          <img src="download.jpeg" alt="test" class="img-fluid" >
-        </div>
-        <div class="col-sm">
-          <div class="form-row mb-3">
-            <div class="form-group col-md-6">
-              <label for="marcaModelo">Marca/Modelo</label>
-              <input type="text" class="form-control" id="marcaModelo">
-            </div>dcscdscdscds
-            <div class="form-group col-md-6">
-              <label for="ano">Ano</label>
-              <input type="number" class="form-control" id="ano">
-            </div>
-          </div>
-          <div class="form-row mb-3">
-            <div class="form-group col-md-6">
-              <label for="placa">Placa</label>
-              <input type="text" class="form-control" id="placa">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="cor">Cor</label>
-              <input type="cor" class="form-control" id="cor">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
-        </div>
-      </div>
-    </form>
-
-    <br><br>
-
+  <header>
+    <h1>
+      <span data-js="company-name"></span>
+      <span data-js="company-phone"></span>
+    </h1>
+  </header>
+  
+  <form action="/" data-js="form-register">
+    <ul>
+      <li>
+        <label>Imagem do Carro:</label>
+        <input type="url">
+      </li>
+      <li>
+        <label>Marca / Modelo:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Ano:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Placa:</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>Cor:</label>
+        <input type="text">
+      </li>
+      <li>
+        <button>Cadastrar</button>
+      </li>
+    </ul>
     
+    <table>
+      <thead>
+        <th>Imagem do Carro</th>
+        <th>Marca / Modelo</th>
+        <th>Ano</th>
+        <th>Placa</th>
+        <th>Cor</th>
+      </thead>
 
-    <table class="table text-center nav">
-      <td>Carros Cadastrados</td>
-
+      <tbody>
+        
+      </tbody>
     </table>
-
-
-  </div>
+  </form>
+  <script src="dom.js"></script>
   <script src="challenge-29.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 </body>
-
 </html>
