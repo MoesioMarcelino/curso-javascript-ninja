@@ -5,57 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Moesio Cars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <h1>
-      <span data-js="company-name"></span> -
-      <span data-js="company-phone"></span>
-    </h1>
-  </header>
-  
-  <form action="/" data-js="form-register">
-    <ul>
-      <li>
-        <label>Imagem do Carro:</label>
-        <input type="url" data-js="image">
-      </li>
-      <li>
-        <label>Marca / Modelo:</label>
-        <input type="text" data-js="brand-model">
-      </li>
-      <li>
-        <label>Ano:</label>
-        <input type="text" data-js="year">
-      </li>
-      <li>
-        <label>Placa:</label>
-        <input type="text" data-js="plate">
-      </li>
-      <li>
-        <label>Cor:</label>
-        <input type="text" data-js="color">
-      </li>
-      <li>
-        <button>Cadastrar</button>
-      </li>
-    </ul>
-    
-    <table>
-      <thead>
-        <th>Imagem do Carro</th>
-        <th>Marca / Modelo</th>
-        <th>Ano</th>
-        <th>Placa</th>
-        <th>Cor</th>
-      </thead>
+  <div class="container">
 
-      <tbody data-js="table-car">
-        
-      </tbody>
-    </table>
-  </form>
+    <br><br>
+
+    <header>
+      <p class="h2 text-center">
+        <span data-js="company-name"></span> -
+        <span data-js="company-phone"></span>
+      </p>
+    </header>
+    
+    <br>
+
+    <div class="row">
+      <div class="col-4">
+        <form action="/" data-js="form-register">
+          <div>
+            <label for="image">Cars' image:</label>
+            <input type="url" id="image" data-js="image" class="form-control" placeholder="Put the link here" required>
+          </div>
+          <div>
+            <label for="brand-model">Marca / Modelo:</label>
+            <input type="text" id="brand-model" data-js="brand-model" class="form-control" placeholder="Brand / Model" required>
+          </div>        
+          <div>
+            <label for="year">Ano:</label>
+            <input type="text" id="year" data-js="year" class="form-control" placeholder="Year" required>
+          </div>
+          <div>
+            <label for="plate">Placa:</label>
+            <input type="text" id="plate" data-js="plate" class="form-control" placeholder="Plate" required>
+          </div>
+          <div>
+            <label for="color">Cor:</label>
+            <input type="text" id="color" data-js="color" class="form-control" placeholder="Color" required>
+          </div>
+          <div>
+            <br>
+            <button class="btn btn-primary btn-block">Cadastrar</button>
+          </div>
+        </div>
+        <div class="col-8">
+          <table class="table">
+            <thead>
+              <th>Imagem do Carro</th>
+              <th>Marca / Modelo</th>
+              <th>Ano</th>
+              <th>Placa</th>
+              <th>Cor</th>
+            </thead>
+
+            <tbody data-js="table-car">
+              
+            </tbody>
+          </table>
+        </div>
+    </form>
+  </div>
   <script src="dom.js"></script>
   <script src="challenge-29.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

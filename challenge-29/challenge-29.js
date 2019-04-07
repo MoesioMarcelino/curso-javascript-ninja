@@ -49,7 +49,6 @@
 
       handleSubmit: function handleSubmit(e) {
         e.preventDefault();
-        console.log('submit');
         var $tableCar = $('[data-js="table-car"]').get();
         $tableCar.appendChild(app.createNewCar());
       },
@@ -64,8 +63,11 @@
         var $tdColor = document.createElement('td');
 
         var $image = document.createElement('img');
-        $image.src = $('[data-js="image"]').get().value;
-        $tdimage.appendChild($image);
+        var value = $('[data-js="image"]').get().value;
+        $image.setAttribute('src', value);
+        $image.setAttribute('style','max-width: 100px, heigth: auto');
+        $tdImage.appendChild($image);
+        $tdImage.setAttribute('max-width','100px');
         
         $tdImage.textContent = $('[data-js="image"]').get().value;
         $tdBrand.textContent = $('[data-js="brand-model"]').get().value;
