@@ -61,6 +61,7 @@
         var $tdYear = document.createElement('td');
         var $tdPlate = document.createElement('td');
         var $tdColor = document.createElement('td');
+        var $tdButton = document.createElement('td');
 
         var $image = document.createElement('img');
         var value = $('[data-js="image"]').get().value;
@@ -69,6 +70,14 @@
         $tdImage.appendChild($image);
         $tdImage.setAttribute('max-width','100px');
         
+        var $buttonRemove = document.createElement('button');
+        $buttonRemove.textContent = "remover";
+        $buttonRemove.setAttribute('class','btn btn-danger');
+        $buttonRemove.setAttribute('onclick',removeTd);
+        // $buttonRemove.style.onclick = removeTd;
+        $tdButton.appendChild($buttonRemove);
+
+
         $tdImage.textContent = $('[data-js="image"]').get().value;
         $tdBrand.textContent = $('[data-js="brand-model"]').get().value;
         $tdYear.textContent = $('[data-js="year"]').get().value;
@@ -80,8 +89,11 @@
         $tr.appendChild($tdYear);
         $tr.appendChild($tdPlate);
         $tr.appendChild($tdColor);
+        $tr.appendChild($tdButton);
         
-        
+        function removeTd(){
+          return $tr.innerHTML = "<p></p>";
+        }
         return $fragment.appendChild($tr);
       },
 
